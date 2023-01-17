@@ -57,6 +57,10 @@ section {
     font-size: 3vw;
 }
 
+section >p {
+    padding-bottom: 2em;
+}
+
 section.normal {
     background-color: white;
     color: black;
@@ -65,14 +69,27 @@ section.normal {
 section.imagem {
     background-color: rgb(41, 40, 40);
     color: white;
+    box-shadow: inset 6px 6px 0px rgba(0, 0, 0, 0.267);
+    background-attachment: fixed;
 }
 
 section.imagem > p {
     display: inline-block;
     padding: 5px;
     background-color: rgba(2, 2, 2, 0.342);
+    text-shadow: 1px 1px 0px black;
 }
 
+section#img01 {
+    background-image: url('/home/lucasbaumgartner/Documents/Programacao/estudos/html_css/desafios/desafio_cordel/imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url('/home/lucasbaumgartner/Documents/Programacao/estudos/html_css/desafios/desafio_cordel/imagens/background002.jpg');
+    background-size: cover;
+}
 footer {
     background-color: black;
     color: white;
