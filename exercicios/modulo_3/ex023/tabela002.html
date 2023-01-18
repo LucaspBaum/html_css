@@ -12,6 +12,7 @@
        table {
         width: 500px;
         border-collapse: collapse;
+        position: relative;
        }
        td, th {
         border: 1px solid black;
@@ -23,9 +24,19 @@
         padding: 10px;
         background-color: lightslategray;
        }
+       thead {
+        position: sticky;
+        top: -1px;
+       }
        thead, tfoot {
         background-color: gray;
         color: white;
+       }
+       tbody > tr:nth-child(even) {/*2n*/
+        background-color: white;
+       }
+       tbody > tr:nth-child(odd) {/* 2n-1*/
+        background-color: lightslategray;
        }
        td.num {
         text-align: right;
